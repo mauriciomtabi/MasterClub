@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IA na Prática · MTABI</title>
+<meta name="description" content="Palestra de Maurício Maciel (MTABI) no Master Club: o que mudou em IA em 2026 e como levar para dentro da operação da empresa.">
+<link rel="icon" type="image/png" href="assets/mtabi_icone_circular_amarelo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css?v=1790665939138">
+</head>
+<body>
+
+<div id="viewport">
+<main id="stage" aria-live="polite">
+
+<!-- 01 · CAPA -->
+<section class="slide capa" data-titulo="Capa">
+  <div class="capa__luz" aria-hidden="true"></div>
+  <div class="capa__topo">
+    <img class="marca" src="assets/mtabi-simbolo.png" alt="MTABI">
+    <span class="capa__x">×</span>
+    <img class="capa__mc" src="assets/master-club-transparente.png" alt="Master Club UZI">
+    <span class="capa__data">29 · 09 · 2026</span>
+  </div>
+  <div class="capa__texto">
+    <h1>IA na<br><em>prática.</em></h1>
+    <p class="capa__apoio">Menos ferramenta da moda.<br><strong>Mais operação funcionando.</strong></p>
+    <p class="capa__autor"><strong>Maurício Maciel</strong> · Fundador da MTABI</p>
+  </div>
+  <div class="capa__m" aria-hidden="true"><div class="capa__pecas"></div><p class="capa__legenda">MTABI</p></div>
+  <div class="capa__faixa" aria-hidden="true"><div><span class="t">ChatGPT</span><span>Kling</span><span>Runway</span><span class="g">Gemini</span><span>Lovable</span><span class="g">Flow</span><span>Cursor</span><span>Perplexity</span><span class="t">Claude</span><span>Sora</span><span class="g">Notebook</span><span>Midjourney</span><span>Copilot</span><span class="g">Veo</span><span>Grok</span><span class="g">Antigravity</span><span>DeepSeek</span><span>Manus</span><span class="g">Nano Banana</span><span>Pika</span><span class="g">Omni Flash</span><span>Mistral</span><span class="t">ChatGPT</span><span>Kling</span><span>Runway</span><span class="g">Gemini</span><span>Lovable</span><span class="g">Flow</span><span>Cursor</span><span>Perplexity</span><span class="t">Claude</span><span>Sora</span><span class="g">Notebook</span><span>Midjourney</span><span>Copilot</span><span class="g">Veo</span><span>Grok</span><span class="g">Antigravity</span><span>DeepSeek</span><span>Manus</span><span class="g">Nano Banana</span><span>Pika</span><span class="g">Omni Flash</span><span>Mistral</span></div></div>
+  <aside class="notes">
+    Ao avançar, a capa some, os blocos fazem 3, 2, 1 no centro e o foguete leva ao slide 2 (cerca de 8 segundos; avançar de novo pula). Tem som (bipes, decolagem, pouso, explosão); tecla M liga e desliga. Tecla L: monta o foguete e decola na hora (bom para abrir a palestra). Deixar a capa na tela enquanto a sala entra: o símbolo se monta sozinho e a faixa de nomes de IA fica correndo embaixo. Leitura da imagem, se quiser usar: embaixo, o barulho de uma IA nova por semana; em cima, a ordem. Boa noite. Antes de começar: levante a mão quem usou alguma IA nesta semana. (Pausa.) Agora mantenha a mão levantada quem tem IA rodando dentro de um processo da empresa, sem depender de alguém abrir o ChatGPT. Essa diferença de mãos é o assunto de hoje.
+  </aside>
+</section>
+
+<!-- 02 · QUEM FALA -->
+<section class="slide quem" data-titulo="Quem fala">
+  <figure class="quem__foto"><img src="assets/mauricio.webp" alt="Maurício Maciel"><span></span></figure>
+  <div class="quem__texto">
+    <p class="rotulo"><i></i>Quem está falando</p>
+    <h2>Maurício Maciel</h2>
+    <p class="quem__papel">Fundador da MTABI · Tecnologia aplicada à operação</p>
+    <ul class="lista-marca">
+      <li>Mais de 15 anos dentro da operação de empresas.</li>
+      <li>Sei como é ver a empresa crescer e a tecnologia ficar para trás.</li>
+      <li>Hoje, com IA, construo soluções para todo tipo de negócio.</li>
+    </ul>
+  </div>
+  <aside class="notes">
+    Chegando da capa: o foguete pousa, vira o M e explode revelando este slide (avançar durante a chegada pula). Passei mais de quinze anos dentro da operação de empresas, e é desse lado que olho para a IA: o que ela tira do dia de quem trabalha. Tudo que vou mostrar hoje eu uso ou coloquei para rodar em cliente.
+  </aside>
+</section>
+
+<!-- 03 · HISTÓRIA -->
+<section class="slide historia" data-titulo="Minha história com IA">
+  <p class="rotulo"><i></i>Jornada</p>
+  <h2>Comecei antes do boom. Testei as principais.<br><em>Fiquei com o que funciona.</em></h2>
+  <ol class="linha-tempo">
+    <li class="f"><span class="selo" data-marco="1"><img src="assets/logos/chatgpt.svg" alt="ChatGPT"></span><span class="rot">Antes</span><strong>Só ChatGPT</strong><p>O mundo falava de uma ferramenta só.</p></li>
+    <li class="f"><span class="selo" data-marco="2"><img src="assets/logos/lovable.svg" alt="Lovable"></span><span class="rot">Descoberta</span><strong>Além do ChatGPT</strong><p>Lovable e as primeiras IAs que construíam coisas.</p></li>
+    <li class="f"><span class="selo selo--mosaico" data-marco="3"><img src="assets/logos/claude.svg" alt="Claude"><img src="assets/logos/g-gemini.svg" alt="Gemini"><img src="assets/logos/perplexity.svg" alt="Perplexity"><img src="assets/logos/cursor.svg" alt="Cursor"></span><span class="rot">Explosão</span><strong>Uma IA nova por semana</strong><p>Ficou impossível acompanhar tudo.</p></li>
+    <li class="f"><span class="selo selo--dupla" data-marco="4"><img src="assets/logos/antigravity.png" alt="Antigravity"><img src="assets/logos/claudecode.svg" alt="Claude Code"></span><span class="rot">Prática</span><strong>Testar no negócio</strong><p>Ficou só o que deu resultado real.</p></li>
+    <li class="f atual"><span class="selo" data-marco="5"><img src="assets/mtabi-simbolo.png" alt="MTABI"></span><span class="rot">Hoje</span><strong>IA dentro da operação</strong><p>Soluções com IA rodando todo dia em empresas atendidas pela MTABI.</p></li>
+  </ol>
+  <blockquote class="citacao f">Se você parar para acompanhar todas as IAs, não vai focar em nenhuma.</blockquote>
+  <aside class="notes">
+    Cada clique acende um marco e a linha corre até ele; o sexto clique mostra a frase final. Aprendi experimentando. Houve uma fase em que saía uma IA nova por semana, e percebi que quem tenta acompanhar tudo não aplica nada. A virada foi escolher poucas ferramentas e colocar para trabalhar num problema real.
+  </aside>
+</section>
+
+<!-- 04 · SETEMBRO -->
+<section class="slide ritmo" data-titulo="Setembro de 2026">
+  <p class="rotulo"><i></i>Quatro meses depois</p>
+  <h2>Em maio, eu mostrei estes nomes.<br><em>Hoje, já são outros.</em></h2>
+  <div class="evo">
+    <div class="evo__cab"><span></span><span>Maio</span><span></span><span>Setembro</span></div>
+    <div class="evo__linha"><img src="assets/logos/claude.svg" alt="Claude"><span class="evo__velho">Claude Opus 4.6</span><span class="evo__seta">→</span><strong class="evo__novo">Claude Opus 5.5</strong></div>
+    <div class="evo__linha"><img src="assets/logos/chatgpt.svg" alt="ChatGPT"><span class="evo__velho">GPT-4o</span><span class="evo__seta">→</span><strong class="evo__novo">GPT-6</strong></div>
+    <div class="evo__linha"><img src="assets/logos/g-gemini.svg" alt="Gemini"><span class="evo__velho">Gemini Pro</span><span class="evo__seta">→</span><strong class="evo__novo">Gemini 3.8</strong></div>
+  </div>
+  <p class="ritmo__fecho">A cada versão, a IA faz mais. <strong>Olha só.</strong></p>
+  <p class="fonte">Fontes: anúncios oficiais da Anthropic, da OpenAI e do Google, setembro de 2026.</p>
+  <aside class="notes">
+    Três empresas, uma geração nova cada uma, em quatro meses. O Claude Opus 5.5 e o GPT-6 Sol saíram no mesmo dia, 22 de setembro; o Gemini 3.8 Flash, no começo do mês. Se a sua estratégia de IA depende de saber qual é o melhor modelo, ela vence a cada trinta dias. Fechar com a frase da tela e avançar para o vídeo.
+  </aside>
+</section>
+
+<!-- 05 · ANTES × AGORA -->
+<section class="slide ad" data-titulo="Evolução em vídeo">
+  <p class="rotulo"><i></i>O que a IA fazia × o que faz hoje</p>
+  <h2>O mesmo pedido, <em>de 2023 a 2026.</em></h2>
+  <div class="ad__video">
+    <div class="ad__tela"><video src="assets/antes-depois/evolucao-will-smith.mp4" playsinline preload="auto" data-manual></video><button type="button" class="ad__play" aria-label="Tocar vídeo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg></button></div>
+    <ol class="ad__anos" aria-hidden="true"><li data-ate="4.6">2023</li><li data-ate="9.6">2024</li><li data-ate="15.6">2025</li><li data-ate="999">2026</li></ol>
+  </div>
+  <aside class="notes">
+    O vídeo abre parado com o botão de play no meio: clique quando quiser (55 segundos, com som). Clicar de novo pausa. O ano ao lado acompanha o vídeo. É o meme mais famoso para medir a evolução da IA: o mesmo pedido, Will Smith comendo espaguete, feito em 2023, 2024, 2025 e 2026.
+  </aside>
+</section>
+
+<!-- 06 · 52 x 17 -->
+<section class="slide numeros" data-titulo="O dono já usa">
+  <p class="rotulo"><i></i>O cenário no Brasil</p>
+  <h2>O dono já usa. <em>A empresa ainda não.</em></h2>
+  <div class="numeros__par">
+    <div class="numero f">
+      <strong data-conta="52">52%</strong>
+      <div class="numero__barra"><i style="--p:52"></i></div>
+      <p>dos donos de pequenos negócios <b>já usam IA</b>.</p>
+      <span>Sebrae, 2026</span>
+    </div>
+    <div class="numero numero--baixo f">
+      <strong data-conta="17">17%</strong>
+      <div class="numero__barra"><i style="--p:17"></i></div>
+      <p>das empresas usam IA <b>no dia a dia do negócio</b>.</p>
+      <span>Cetic.br, 2026</span>
+    </div>
+  </div>
+  <aside class="notes">
+    (Entrar) Dois números que resumem por que estamos aqui. (Clique, 52%) O Sebrae ouviu mais de 7 mil donos de pequenos negócios: metade usou IA nas últimas duas semanas. Um texto no ChatGPT, um resumo de e-mail, uma legenda. (Clique, 17%) Mas quando a pergunta é se a EMPRESA usa IA no dia a dia, cai para 17%. Ou seja: a IA está no celular do dono, para ele. Ainda não entrou no financeiro, no comercial, no atendimento. É essa distância que vamos atravessar hoje. SE PERGUNTAREM: são pesquisas diferentes, uma pergunta para a pessoa e a outra olha para a empresa; o recado das duas é o mesmo.
+  </aside>
+</section>
+
+<!-- 06 · 38% -->
+<section class="slide destaque" data-titulo="O motivo">
+  <p class="rotulo"><i></i>Entre quem ainda não usa</p>
+  <p class="destaque__num" data-conta="38">38%</p>
+  <h2><span class="pal" style="--k:0">não</span> <span class="pal" style="--k:1">usa</span> <span class="pal" style="--k:2">por</span> <em><span class="pal" style="--k:3">“falta</span> <span class="pal" style="--k:4">de</span> <span class="pal" style="--k:5">conhecimento</span> <span class="pal" style="--k:6">sobre</span> <span class="pal" style="--k:7">o</span> <span class="pal" style="--k:8">que</span> <span class="pal" style="--k:9">a</span> <span class="pal" style="--k:10">IA</span> <span class="pal" style="--k:11">é</span> <span class="pal" style="--k:12">capaz</span> <span class="pal" style="--k:13">de</span> <span class="pal" style="--k:14">fazer”.</span></em></h2>
+  <p class="fonte">Sebrae, Transformação Digital nos Pequenos Negócios, 2026.</p>
+  <div class="waffle" aria-hidden="true"><i class="b" style="--k:0"></i><i class="b" style="--k:1"></i><i class="b" style="--k:2"></i><i class="b" style="--k:3"></i><i class="b" style="--k:4"></i><i class="b" style="--k:5"></i><i class="b" style="--k:6"></i><i class="b" style="--k:7"></i><i class="b" style="--k:8"></i><i class="b" style="--k:9"></i><i class="b" style="--k:10"></i><i class="b" style="--k:11"></i><i class="b" style="--k:12"></i><i class="b" style="--k:13"></i><i class="b" style="--k:14"></i><i class="b" style="--k:15"></i><i class="b" style="--k:16"></i><i class="b" style="--k:17"></i><i class="b" style="--k:18"></i><i class="b" style="--k:19"></i><i class="b" style="--k:20"></i><i class="b" style="--k:21"></i><i class="b" style="--k:22"></i><i class="b" style="--k:23"></i><i class="b" style="--k:24"></i><i class="b" style="--k:25"></i><i class="b" style="--k:26"></i><i class="b" style="--k:27"></i><i class="b" style="--k:28"></i><i class="b" style="--k:29"></i><i class="b" style="--k:30"></i><i class="b" style="--k:31"></i><i class="b" style="--k:32"></i><i class="b" style="--k:33"></i><i class="b" style="--k:34"></i><i class="b" style="--k:35"></i><i class="b" style="--k:36"></i><i class="b" style="--k:37"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <aside class="notes">
+    Não é falta de dinheiro nem de ferramenta. É não saber o que dá para fazer. Então o resto da palestra é isso: o que dá para fazer, com o quê, e o cuidado que precisa ter.
+  </aside>
+</section>
+
+<!-- 11 · CADA UMA TEM A SUA PRAIA -->
+<section class="slide praias" data-titulo="Cada uma tem a sua praia">
+  <p class="rotulo"><i></i>Texto, imagem, apresentação, vídeo e programação</p>
+  <h2>Cada uma tem <em>a sua praia.</em></h2>
+  <div class="matriz">
+    <i class="matriz__destaque" aria-hidden="true"></i>
+    <div class="mz__cab"></div>
+    <div class="mz__cab"><img src="assets/logos/chatgpt.svg" alt="">ChatGPT</div>
+    <div class="mz__cab"><img src="assets/logos/claude.svg" alt="">Claude</div>
+    <div class="mz__cab mz__cab--google"><img src="assets/logos/g-gemini.svg" alt="">Google</div>
+    <div class="mz__rot" style="--r:0">Texto</div><div class="mz__cel" style="--r:0;--c:1"><b class="mz__s" aria-label="faz">✓</b></div><div class="mz__cel" style="--r:0;--c:2"><b class="mz__s" aria-label="faz">✓</b></div><div class="mz__cel mz__cel--google" style="--r:0;--c:3"><b class="mz__s" aria-label="faz">✓</b></div>
+    <div class="mz__rot" style="--r:1">Imagem</div><div class="mz__cel" style="--r:1;--c:1"><b class="mz__m">★ Melhor</b></div><div class="mz__cel" style="--r:1;--c:2"><b class="mz__n" aria-label="só com outra ferramenta">–</b></div><div class="mz__cel mz__cel--google" style="--r:1;--c:3"><b class="mz__s" aria-label="faz">✓</b></div>
+    <div class="mz__rot" style="--r:2">Apresentação</div><div class="mz__cel" style="--r:2;--c:1"><b class="mz__s" aria-label="faz">✓</b></div><div class="mz__cel" style="--r:2;--c:2"><b class="mz__m">★ Melhor</b></div><div class="mz__cel mz__cel--google" style="--r:2;--c:3"><b class="mz__s" aria-label="faz">✓</b></div>
+    <div class="mz__rot" style="--r:3">Vídeo realista</div><div class="mz__cel" style="--r:3;--c:1"><b class="mz__n" aria-label="só com outra ferramenta">–</b></div><div class="mz__cel" style="--r:3;--c:2"><b class="mz__n" aria-label="só com outra ferramenta">–</b></div><div class="mz__cel mz__cel--google" style="--r:3;--c:3"><b class="mz__m">★ Melhor</b></div>
+    <div class="mz__rot" style="--r:4">Vídeo explicativo e edição</div><div class="mz__cel" style="--r:4;--c:1"><b class="mz__s" aria-label="faz">✓</b></div><div class="mz__cel" style="--r:4;--c:2"><b class="mz__s" aria-label="faz">✓</b></div><div class="mz__cel mz__cel--google" style="--r:4;--c:3"><b class="mz__s" aria-label="faz">✓</b></div>
+    <div class="mz__rot" style="--r:5">Programação</div><div class="mz__cel" style="--r:5;--c:1"><b class="mz__s" aria-label="faz">✓</b></div><div class="mz__cel" style="--r:5;--c:2"><b class="mz__m">★ Melhor</b></div><div class="mz__cel mz__cel--google" style="--r:5;--c:3"><b class="mz__s" aria-label="faz">✓</b></div>
+  </div>
+  <p class="praias__fecho">Só o Google faz tudo isso. <strong>E com versão grátis em cada um.</strong></p>
+  <aside class="notes">
+    Selo MELHOR: ChatGPT em imagem; Claude em programação e apresentação; Google em vídeo realista. Texto sem vencedor claro. O Google é o único que faz tudo, e tudo com versão grátis (Gemini, Nano Banana, Notebook, Flow com 50 créditos por dia, Antigravity). Opcional, só se estiver confortável: o mesmo pedido nas três (texto, depois imagem, depois vídeo), usando a empresa da demo anterior. O Claude não gera foto; monta a peça em HTML ou pelo Claude Design, ótimo para arte com texto certinho. Vídeo: ChatGPT e Claude só integrando outra ferramenta, como Runway ou Kling, e no plano pago; o Google gera grátis no Flow.
+  </aside>
+</section>
+
+<!-- 09 · ZÉ -->
+<section class="slide ze" data-titulo="Zé">
+  <div class="ze__orbe" aria-hidden="true"><i></i><i></i><i></i></div>
+  <p class="ze__nome">Zé</p>
+  <aside class="notes">
+    Apresentar o Zé, o seu Gemini. Demo ao vivo: deixar o Google Agenda aberto na tela e pedir o compromisso pelo celular.
+  </aside>
+</section>
+
+<!-- 10 · DEMO GEMINI NOTEBOOK -->
+<section class="slide nb" data-titulo="Ao vivo: Gemini Notebook">
+  <p class="aovivo">Ao vivo</p>
+  <div class="nb__marca">
+    <img src="assets/logos/gemini-notebook.svg" alt="Gemini Notebook">
+    <div>
+      <h2>Gemini Notebook</h2>
+      <p>o antigo NotebookLM</p>
+    </div>
+  </div>
+  <p class="nb__pergunta">Quem aqui tem site?</p>
+  <aside class="notes">
+    Mesmo roteiro de maio, que prendeu a sala. 1) Pedir o site de alguém da plateia. 2) Criar um caderno com o site como fonte. 3) Perguntar o que um cliente perguntaria. 4) Gerar ao vivo: resumo em áudio apresentando a empresa, infográfico dos serviços, apresentação para um cliente novo. Explicar que ele só responde com base nas fontes e cita de onde tirou. Outras saídas, se der tempo: relatório, mapa mental, resumo em vídeo, tabela de dados, quiz, pesquisa profunda na web; e a novidade, análise de planilha com código (primeiro no Ultra e no Workspace empresarial, chegando ao Pro). Nome novo desde 16/07/2026; endereço notebook.google.com.
+  </aside>
+</section>
+
+<!-- 12 · FLOW -->
+<section class="slide fl" data-titulo="Google Flow">
+  <div class="fl__texto">
+    <div class="fl__marca"><img src="assets/logos/flow.png" alt="Google Flow"><h2>Google Flow</h2></div>
+    <p class="fl__sub">Vídeo realista, direto no navegador.</p>
+    <p class="fl__num"><strong>50</strong><span>créditos por dia,<br><b>grátis</b></span></p>
+    <p class="fl__rende">≈ 4 vídeos realistas por dia · imagens sem limite</p>
+  </div>
+  <figure class="fl__celular">
+    <video src="assets/flow-cabecao.mp4" muted loop playsinline preload="auto"></video>
+    <figcaption>Tudo isso saiu do Flow.</figcaption>
+  </figure>
+  <aside class="notes">
+    As cenas do cabeção (academia, churrasco, estádio, praia, cinema, carro) foram geradas no Flow. O que dá para fazer: texto vira vídeo com som; foto vira vídeo; personagem que se repete de uma cena para outra; estender, editar e juntar cenas; imagem em alta resolução com o Nano Banana Pro. Créditos: com o Omni Flash, 8 segundos custam 12, então os 50 diários rendem cerca de 4 vídeos; o Veo em qualidade máxima custa 100. Crédito que sobra não acumula. Assinante recebe os créditos do plano além dos 50: 200 no AI Plus, 1.000 no AI Pro.
+  </aside>
+</section>
+
+<!-- 13 · EDITAM COMO NINGUÉM -->
+<section class="slide ed" data-titulo="Editam como ninguém">
+  <div class="ed__texto">
+    <div class="ed__logos"><span><img src="assets/logos/chatgpt.svg" alt="">ChatGPT</span><b>+</b><span><img src="assets/logos/claude.svg" alt="">Claude</span></div>
+    <h2>Não criam vídeo realista.<br><em>Editam como ninguém.</em></h2>
+    <ol class="ed__passos">
+      <li><b>Editaram</b> o vídeo do cabeção: cortes, texto e ritmo</li>
+      <li><b>Escreveram</b> a legenda</li>
+      <li><b>Agendaram</b> a postagem no Instagram</li>
+    </ol>
+    <div class="ed__link">
+      <img src="assets/qr-reel.svg" alt="QR code do post no Instagram">
+      <a class="ed__post" href="https://www.instagram.com/p/Ddzoj9eTvzf/" target="_blank" rel="noopener"><img src="assets/post-instagram.webp" alt="Post do Reel no Instagram da MTABI, 660 visualizações"><span>Ver no Instagram ↗</span></a>
+    </div>
+  </div>
+  <figure class="fl__celular">
+    <div class="tela-manual"><video src="assets/reel-cabecao.mp4" loop playsinline preload="auto" data-manual></video><button type="button" class="ad__play" aria-label="Tocar vídeo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg></button></div>
+    <figcaption>Cenas do Flow. Edição, legenda e agendamento por IA.</figcaption>
+  </figure>
+  <aside class="notes">
+    As cenas saíram do Flow; a edição (cortes, texto na tela, ritmo), a legenda e o agendamento no Instagram foram feitos com ChatGPT e Claude. O vídeo abre parado com o botão de play: clique quando quiser (com música). Clicar de novo pausa. O QR abre o post; quem receber a apresentação depois pode clicar no botão.
+  </aside>
+</section>
+
+<!-- 14 · ANTIGRAVITY -->
+<section class="slide ag" data-titulo="Antigravity" data-animacao="ide">
+  <div class="ag__texto">
+    <img class="ag__logo" src="assets/logos/antigravity.png" alt="Antigravity">
+    <h2>Antigravity</h2>
+    <p class="ag__sub">Criar sistema <em>conversando.</em></p>
+    <p class="ag__nota">Você pede. O agente planeja, escreve o código e testa.</p>
+  </div>
+  <div class="ide ide--video" aria-hidden="true">
+    <div class="ide__barra"><i></i><i></i><i></i><span>Antigravity · mapa-cd</span><em class="ide__acel">timelapse</em></div>
+    <div class="ide__corpo">
+      <video class="ide__timelapse" src="assets/antigravity-timelapse.mp4" muted playsinline preload="auto" data-manual></video>
+      <div class="ide__previa">
+        <div class="ide__url"><i></i><span>localhost:5173 · Mapa 3D do CD</span></div>
+        <video src="assets/prototipo-cd-3d.mp4" muted loop playsinline preload="auto" data-manual></video>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    A janela mostra um timelapse do Antigravity (cenas geradas no Flow) e, no fim, abre a prévia do protótipo real do mapa 3D do CD (o mesmo do post do LinkedIn). Começa sozinha quando o slide abre; clique na janela para recomeçar. Planos: Individual grátis (limite semanal básico; Gemini 3.8 Flash, Gemini 3.1 Pro, Claude Sonnet e Opus 4.6, gpt-oss-120b); Google AI Pro R$ 96,99/mês com limites maiores; Ultra R$ 779,90 (5x) ou R$ 999,90 (20x). Grátis para aprender, pago quando virar trabalho. Dados do protótipo são fictícios.
+  </aside>
+</section>
+
+<!-- 15 · IA ACELERA O QUE EXISTE -->
+<section class="slide acel" data-titulo="IA é acelerador">
+  <p class="rotulo"><i></i>Antes de sair usando</p>
+  <h2>IA é acelerador.<br><em class="acel__rapido">Você escolhe o que acelerar.</em></h2>
+  <div class="acel__par">
+    <figure class="acel__lado acel__lado--caos">
+      <div class="acel__cena"><div class="acel__caos" aria-hidden="true"><i style="left:420px;top:136px;width:38px;height:38px;--dx:24px;--dy:-47px;--r:-25deg;--t:0.90s" class="ambar"></i><i style="left:188px;top:63px;width:46px;height:46px;--dx:69px;--dy:-38px;--r:63deg;--t:0.73s"></i><i style="left:451px;top:339px;width:63px;height:63px;--dx:-43px;--dy:10px;--r:184deg;--t:1.11s"></i><i style="left:294px;top:537px;width:47px;height:47px;--dx:34px;--dy:25px;--r:82deg;--t:0.54s"></i><i style="left:505px;top:215px;width:35px;height:35px;--dx:42px;--dy:-50px;--r:-145deg;--t:0.78s"></i><i style="left:307px;top:372px;width:51px;height:51px;--dx:55px;--dy:39px;--r:-89deg;--t:0.88s"></i><i style="left:442px;top:115px;width:69px;height:69px;--dx:74px;--dy:14px;--r:130deg;--t:0.84s" class="ambar"></i><i style="left:26px;top:524px;width:64px;height:64px;--dx:-36px;--dy:-32px;--r:-14deg;--t:0.71s"></i><i style="left:93px;top:169px;width:44px;height:44px;--dx:-37px;--dy:71px;--r:101deg;--t:0.96s"></i><i style="left:16px;top:183px;width:43px;height:43px;--dx:39px;--dy:-56px;--r:-143deg;--t:0.98s"></i><i style="left:249px;top:85px;width:64px;height:64px;--dx:23px;--dy:70px;--r:172deg;--t:1.09s"></i><i style="left:263px;top:554px;width:44px;height:44px;--dx:55px;--dy:59px;--r:117deg;--t:0.53s"></i><i style="left:437px;top:288px;width:65px;height:65px;--dx:-72px;--dy:-50px;--r:-82deg;--t:0.74s"></i><i style="left:476px;top:251px;width:57px;height:57px;--dx:73px;--dy:-26px;--r:103deg;--t:0.96s"></i></div><img src="assets/pessoa-aflito.webp" alt="Gestor aflito"></div>
+      <figcaption>Acelera a bagunça<br><strong>= mais retrabalho</strong></figcaption>
+    </figure>
+    <figure class="acel__lado acel__lado--ordem f">
+      <div class="acel__cena"><div class="acel__esteira" aria-hidden="true"><i style="--k:0"></i><i style="--k:1" class="ambar"></i><i style="--k:2"></i><i style="--k:3"></i><i style="--k:4" class="ambar"></i><i style="--k:5"></i><i style="--k:6"></i></div><img src="assets/pessoa-aliviado.webp" alt="Gestor aliviado"></div>
+      <figcaption>Acelera o que funciona<br><strong>= mais resultado</strong></figcaption>
+    </figure>
+  </div>
+  <aside class="notes">
+    Virada da palestra: sair da ferramenta e ir para a empresa. A IA acelera o que encontra. Em cima de processo confuso, acelera a bagunça e gera mais retrabalho (os blocos girando atrás dele). (Avançar.) Em cima do que funciona, gera mais resultado (os blocos andando em fila). E a própria IA ajuda a organizar o processo antes: é o que a MTABI faz.
+  </aside>
+</section>
+
+<!-- 08 · CADA IA E QUANTO CUSTA -->
+<section class="slide precos" data-titulo="Cada IA e quanto custa">
+  <p class="rotulo"><i></i>Ferramentas</p>
+  <h2>E quanto custa <em>cada uma?</em></h2>
+  <p class="precos__sub">As três têm versão grátis. Estes são os planos pagos de entrada.</p>
+  <div class="ias">
+    <article style="--i:0" class="ia">
+      <img src="assets/logos/chatgpt.svg" alt="">
+      <h3>ChatGPT</h3>
+      <p class="ia__faz">Texto, imagem e voz</p>
+      <p class="ia__preco"><small>a partir de</small><span data-preco="39.99" data-moeda="R$" data-atraso="500">R$ 39,99</span><small>/mês</small></p>
+    </article>
+    <article style="--i:1" class="ia">
+      <img src="assets/logos/claude.svg" alt="">
+      <h3>Claude</h3>
+      <p class="ia__faz">Textos longos e programação</p>
+      <p class="ia__preco"><small>a partir de</small><span data-preco="20" data-moeda="US$" data-atraso="800">US$ 20</span><small>/mês</small></p>
+    </article>
+    <article style="--i:2" class="ia ia--google">
+      <span class="ia__carimbo">Mais completo<br>e mais barato</span>
+      <img src="assets/logos/g-gemini.svg" alt="">
+      <h3>Google</h3>
+      <p class="ia__faz">Tudo integrado ao seu Google</p>
+      <p class="ia__preco"><small>a partir de</small><span data-preco="24.99" data-moeda="R$" data-atraso="1100">R$ 24,99</span><small>/mês</small></p>
+    </article>
+  </div>
+  <p class="precos__fecho">No Google, uma assinatura inclui <strong><span style="--k:0">Drive</span>, <span style="--k:1">Gmail</span>, <span style="--k:2">Flow</span>, <span style="--k:3">Notebook</span> e <span style="--k:4">Antigravity</span>.</strong></p>
+  <aside class="notes">
+    As três têm versão grátis, com limite. Preços de entrada: ChatGPT Go R$ 39,99 (o Plus é US$ 20, cerca de R$ 103 + IOF); Claude Pro US$ 20 (cerca de R$ 103 + IOF); Google AI Plus R$ 24,99 (o AI Pro é R$ 96,99). Vídeo: ChatGPT e Claude só integrando outra ferramenta, como Runway ou Kling, e no plano pago; o Google gera grátis no Flow, cerca de 4 vídeos de 8 segundos por dia e imagens sem limite. Fontes: Exame (24/09/2026) e páginas oficiais. Frase sobre dados, se quiser: no plano gratuito, o que você digita pode ser usado para treinar a IA; dado de cliente e financeiro, só em plano pago e com o treino desligado nas configurações.
+  </aside>
+</section>
+
+<!-- 16 · GOOGLE AI PRO -->
+<section class="slide beneficios" data-titulo="Google AI Pro">
+  <p class="rotulo"><i></i>O que vem junto</p>
+  <h2>O que vem <em>no Google AI Pro.</em></h2>
+  <div class="bn__grade">
+    <article class="bn" style="--k:0">
+      <div class="bn__icones"><img src="assets/logos/g-gemini.svg" alt=""></div>
+      <h3>Gemini</h3>
+      <p class="bn__oque">O assistente de IA do Google</p>
+      <div class="bn__pro"><span>No AI Pro</span><p>Limite 4 vezes maior que o gratuito</p></div>
+    </article>
+    <article class="bn" style="--k:1">
+      <div class="bn__icones"><img src="assets/logos/gemini-notebook.svg" alt=""></div>
+      <h3>Gemini Notebook</h3>
+      <p class="bn__oque">Estuda seus documentos e gera resumo, áudio, vídeo e apresentação</p>
+      <div class="bn__pro"><span>No AI Pro</span><p>Recursos a mais</p></div>
+    </article>
+    <article class="bn" style="--k:2">
+      <div class="bn__icones"><img src="assets/logos/flow.png" alt=""></div>
+      <h3>Flow</h3>
+      <p class="bn__oque">Cria imagens e vídeos realistas</p>
+      <div class="bn__pro"><span>No AI Pro</span><p>1.000 créditos por mês, além dos 50 diários</p></div>
+    </article>
+    <article class="bn" style="--k:3">
+      <div class="bn__icones"><img src="assets/logos/g-gmail.svg" alt=""><img src="assets/logos/g-docs.svg" alt=""><img src="assets/logos/g-sheets.svg" alt=""></div>
+      <h3>Gmail, Docs e Planilhas</h3>
+      <p class="bn__oque">Suas ferramentas do dia a dia</p>
+      <div class="bn__pro"><span>No AI Pro</span><p>Com o Gemini dentro</p></div>
+    </article>
+    <article class="bn" style="--k:4">
+      <div class="bn__icones"><img src="assets/logos/antigravity.png" alt=""></div>
+      <h3>Antigravity</h3>
+      <p class="bn__oque">Cria sites e sistemas conversando com a IA</p>
+      <div class="bn__pro"><span>No AI Pro</span><p>Limites maiores</p></div>
+    </article>
+    <article class="bn" style="--k:5">
+      <div class="bn__icones"><img src="assets/logos/g-drive.svg" alt=""></div>
+      <h3>Drive</h3>
+      <p class="bn__oque">Seus arquivos na nuvem</p>
+      <div class="bn__pro"><span>No AI Pro</span><p>5 TB de armazenamento</p></div>
+    </article>
+  </div>
+
+  <p class="bn__preco">Google AI Pro: R$ 96,99/mês · AI Plus, para começar: R$ 24,99/mês · Planos oficiais do Google no Brasil, setembro de 2026.</p>
+  <aside class="notes">
+    Fechamento prático: tudo o que foi mostrado do Google cabe numa assinatura. O preço fica pequeno de propósito, para não soar como venda. AI Plus (R$ 24,99) tem 200 créditos de Flow e 400 GB.
+  </aside>
+</section>
+
+<!-- 17 · JÁ AMANHÃ -->
+<section class="slide amanha" data-titulo="Já amanhã">
+  <p class="rotulo"><i></i>Para levar daqui</p>
+  <h2>O que dá para fazer <em>já amanhã.</em></h2>
+  <ol class="amanha__lista">
+    <li style="--k:0"><span class="ck" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><p><strong>Converse com o Gemini do seu Google.</strong> Agenda, e-mail e lembrete, como eu faço com o Zé.</p></li>
+    <li style="--k:1"><span class="ck" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><p><strong>Coloque o site da sua empresa no Gemini Notebook</strong> e veja o que ele gera.</p></li>
+    <li style="--k:2"><span class="ck" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><p><strong>Faça uma imagem e um vídeo no Flow.</strong> 50 créditos por dia, de graça.</p></li>
+    <li style="--k:3"><span class="ck" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><p><strong>Liste três tarefas repetitivas da sua empresa.</strong> É por elas que a IA começa.</p></li>
+    <li style="--k:4"><span class="ck" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><p><strong>Arrume antes de acelerar.</strong> IA em cima de bagunça gera mais retrabalho.</p></li>
+  </ol>
+  <aside class="notes">
+    Cinco coisas, nenhuma exige contratar ninguém, e cada uma retoma algo da palestra: o Zé, o Notebook, o Flow e o acelerador. Se alguém quiser, eu ajudo a olhar a lista de tarefas repetitivas na primeira conversa, sem custo.
+  </aside>
+</section>
+
+<!-- 18 · CONTATO -->
+<section class="slide fim" data-titulo="Contato">
+  <div class="fim__luz" aria-hidden="true"></div>
+  <div class="fim__texto">
+    <div class="fim__marca">
+      <div class="fim__m" aria-hidden="true"><i style="grid-row:1;grid-column:1;--sx:-532px;--sy:-530px;--r:-72deg;--k:0"></i><i style="grid-row:1;grid-column:5;--sx:-149px;--sy:-408px;--r:185deg;--k:1"></i><i style="grid-row:2;grid-column:1;--sx:-120px;--sy:398px;--r:73deg;--k:2"></i><i style="grid-row:2;grid-column:4;--sx:-613px;--sy:-465px;--r:-159deg;--k:3"></i><i style="grid-row:2;grid-column:5;--sx:46px;--sy:107px;--r:150deg;--k:4"></i><i style="grid-row:3;grid-column:1;--sx:-694px;--sy:229px;--r:42deg;--k:5"></i><i style="grid-row:3;grid-column:2;--sx:483px;--sy:139px;--r:-27deg;--k:6"></i><i style="grid-row:3;grid-column:5;--sx:-255px;--sy:-120px;--r:-63deg;--k:7"></i><i style="grid-row:4;grid-column:1;--sx:-141px;--sy:144px;--r:24deg;--k:8"></i><i style="grid-row:4;grid-column:3;--sx:-635px;--sy:373px;--r:77deg;--k:9"></i><i style="grid-row:4;grid-column:4;--sx:612px;--sy:-321px;--r:-96deg;--k:10"></i><i style="grid-row:4;grid-column:5;--sx:-884px;--sy:-309px;--r:-84deg;--k:11"></i><i style="grid-row:5;grid-column:1;--sx:-362px;--sy:-258px;--r:198deg;--k:12"></i><i style="grid-row:5;grid-column:2;--sx:719px;--sy:122px;--r:153deg;--k:13"></i><i style="grid-row:5;grid-column:3;--sx:-699px;--sy:-9px;--r:41deg;--k:14"></i><i style="grid-row:5;grid-column:5;--sx:-210px;--sy:421px;--r:90deg;--k:15"></i></div>
+      <span class="fim__nome">MTABI</span>
+      <span class="fim__x" aria-hidden="true">×</span>
+      <img class="fim__mc" src="assets/master-club-transparente.png" alt="Master Club UZI">
+    </div>
+    <div class="fim__meio">
+    <div class="fim__eu">
+      <img src="assets/mauricio.webp" alt="Maurício Maciel">
+      <h2>Maurício Maciel</h2>
+    </div>
+    <p class="fim__frase">A IA certa, <em>no contexto certo.</em></p>
+    </div>
+    <div class="fim__base">
+    <div class="fim__redes">
+      <a class="rede" style="--k:0" href="https://wa.me/5551997587025?text=Ol%C3%A1%20Maur%C3%ADcio%2C%20vi%20sua%20palestra%20no%20Master%20Club" target="_blank" rel="noopener"><img src="assets/logos/whatsapp.svg" alt=""><span>WhatsApp</span></a>
+      <a class="rede" style="--k:1" href="https://www.instagram.com/mauriciotabi/" target="_blank" rel="noopener"><img src="assets/logos/instagram.svg" alt=""><span>Instagram</span></a>
+      <a class="rede" style="--k:2" href="https://www.linkedin.com/company/mtabi/" target="_blank" rel="noopener"><img src="assets/logos/linkedin.svg" alt=""><span>LinkedIn</span></a>
+      <a class="rede" style="--k:3" href="https://www.facebook.com/profile.php?id=61576902835981" target="_blank" rel="noopener"><img src="assets/logos/facebook.svg" alt=""><span>Facebook</span></a>
+      <a class="rede" style="--k:4" href="https://www.mtabi.com.br" target="_blank" rel="noopener"><img src="assets/logos/../mtabi-simbolo.png" alt=""><span>Site</span></a>
+    </div>
+    <p class="fim__dados">51 99758-7025 · contato@mtabi.com.br · mtabi.com.br</p>
+    </div>
+  </div>
+  <figure class="fim__qr">
+    <p class="fim__chamada"><strong>Me chama.</strong> Eu te mostro onde a IA entra na sua empresa.</p>
+    <div class="fim__qrcaixa"><img src="assets/qr-whatsapp.svg" alt="QR code para o WhatsApp de Maurício Maciel"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i><b class="fim__scan"></b></div>
+    <figcaption>Aponte a câmera: abre o WhatsApp</figcaption>
+  </figure>
+  <div class="fim__faixa" aria-hidden="true"><div><span>Integração de sistemas</span><span>Automação de processos</span><span>Sistema sob medida</span><span>Primeira conversa sem custo</span><span>Integração de sistemas</span><span>Automação de processos</span><span>Sistema sob medida</span><span>Primeira conversa sem custo</span><span>Integração de sistemas</span><span>Automação de processos</span><span>Sistema sob medida</span><span>Primeira conversa sem custo</span></div></div>
+  <div class="fim__confete" aria-hidden="true"><i style="left:243px;width:32px;height:32px;--d:0.08s;--t:2.81s;--r:334deg"></i><i style="left:1643px;width:24px;height:24px;--d:0.52s;--t:3.54s;--r:65deg" class="ambar"></i><i style="left:1509px;width:26px;height:26px;--d:0.75s;--t:2.42s;--r:236deg" class="ambar"></i><i style="left:1480px;width:29px;height:29px;--d:0.70s;--t:2.51s;--r:132deg"></i><i style="left:1164px;width:33px;height:33px;--d:0.48s;--t:2.87s;--r:-219deg" class="ambar"></i><i style="left:260px;width:14px;height:14px;--d:0.50s;--t:3.21s;--r:351deg" class="ambar"></i><i style="left:1362px;width:35px;height:35px;--d:0.71s;--t:3.35s;--r:290deg"></i><i style="left:1747px;width:27px;height:27px;--d:0.44s;--t:2.35s;--r:-16deg" class="ambar"></i><i style="left:706px;width:24px;height:24px;--d:0.32s;--t:2.68s;--r:107deg" class="ambar"></i><i style="left:169px;width:20px;height:20px;--d:0.86s;--t:2.36s;--r:226deg"></i><i style="left:228px;width:27px;height:27px;--d:0.53s;--t:3.08s;--r:342deg" class="ambar"></i><i style="left:224px;width:27px;height:27px;--d:0.72s;--t:3.08s;--r:-319deg" class="ambar"></i><i style="left:576px;width:21px;height:21px;--d:0.72s;--t:3.34s;--r:-344deg"></i><i style="left:1737px;width:22px;height:22px;--d:0.64s;--t:3.31s;--r:-149deg" class="ambar"></i><i style="left:1644px;width:35px;height:35px;--d:0.35s;--t:2.96s;--r:134deg" class="ambar"></i><i style="left:382px;width:24px;height:24px;--d:0.62s;--t:3.51s;--r:-311deg"></i><i style="left:288px;width:26px;height:26px;--d:0.19s;--t:2.91s;--r:-276deg" class="ambar"></i><i style="left:997px;width:32px;height:32px;--d:0.74s;--t:3.36s;--r:309deg" class="ambar"></i><i style="left:1848px;width:32px;height:32px;--d:0.10s;--t:2.39s;--r:-286deg"></i><i style="left:1339px;width:16px;height:16px;--d:0.46s;--t:3.29s;--r:266deg" class="ambar"></i><i style="left:1682px;width:17px;height:17px;--d:0.21s;--t:3.41s;--r:-305deg" class="ambar"></i><i style="left:1003px;width:29px;height:29px;--d:0.83s;--t:2.43s;--r:-133deg"></i><i style="left:1013px;width:21px;height:21px;--d:0.44s;--t:2.97s;--r:-232deg" class="ambar"></i><i style="left:1397px;width:27px;height:27px;--d:0.78s;--t:2.67s;--r:-221deg" class="ambar"></i><i style="left:233px;width:21px;height:21px;--d:0.86s;--t:3.05s;--r:35deg"></i><i style="left:849px;width:33px;height:33px;--d:0.65s;--t:3.07s;--r:-114deg" class="ambar"></i><i style="left:84px;width:21px;height:21px;--d:0.09s;--t:2.20s;--r:-264deg" class="ambar"></i><i style="left:225px;width:15px;height:15px;--d:0.18s;--t:2.36s;--r:56deg"></i><i style="left:1156px;width:27px;height:27px;--d:0.63s;--t:3.37s;--r:287deg" class="ambar"></i><i style="left:556px;width:16px;height:16px;--d:0.33s;--t:3.17s;--r:-242deg" class="ambar"></i><i style="left:340px;width:34px;height:34px;--d:0.89s;--t:3.19s;--r:-347deg"></i><i style="left:137px;width:21px;height:21px;--d:0.86s;--t:3.56s;--r:-147deg" class="ambar"></i><i style="left:1344px;width:17px;height:17px;--d:0.16s;--t:2.82s;--r:143deg" class="ambar"></i><i style="left:518px;width:30px;height:30px;--d:0.45s;--t:3.35s;--r:285deg"></i></div>
+  <aside class="notes">
+    Obrigado. Os botões abrem direto WhatsApp, Instagram, LinkedIn, Facebook e o site (para quem receber a apresentação). O QR abre o WhatsApp com a mensagem pronta dizendo que vieram do Master Club. Deixar este slide na tela durante as perguntas.
+  </aside>
+</section>
+
+</main>
+</div>
+
+<footer id="chrome" aria-hidden="true">
+  <span class="chrome__marca"><img src="assets/mtabi-simbolo.png" alt="">MTABI · IA na prática</span>
+  <span id="contador">01 / 18</span>
+  <i id="progresso"></i>
+</footer>
+
+<div id="presenter" hidden>
+  <div class="pv__atual"><div class="pv__rotulo">Agora</div><div id="pv-atual-box"></div></div>
+  <div class="pv__lado">
+    <div class="pv__prox"><div class="pv__rotulo">Próximo</div><div id="pv-prox-box"></div></div>
+    <div class="pv__info">
+      <div><span class="pv__rotulo">Tempo</span><strong id="pv-tempo">00:00</strong><button type="button" id="pv-zerar">Zerar</button></div>
+      <div><span class="pv__rotulo">Relógio</span><strong id="pv-relogio">--:--</strong></div>
+      <div><span class="pv__rotulo">Slide</span><strong id="pv-slide">1 / 18</strong></div>
+    </div>
+    <div class="pv__notas"><div class="pv__rotulo">Anotações</div><div id="pv-notas"></div></div>
+    <div class="pv__nav"><button type="button" id="pv-ant">Anterior</button><button type="button" id="pv-prox">Próximo</button></div>
+  </div>
+</div>
+
+<div id="ajuda" hidden>
+  <p><kbd>→</kbd> <kbd>Espaço</kbd> avança · <kbd>←</kbd> volta · <kbd>F</kbd> tela cheia · <kbd>P</kbd> modo apresentador · <kbd>M</kbd> som · <kbd>Home</kbd> início · número + <kbd>Enter</kbd> vai ao slide</p>
+</div>
+
+<script src="apresentacao.js?v=1790665939138"></script>
+</body>
+</html>

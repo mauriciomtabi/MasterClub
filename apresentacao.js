@@ -1438,6 +1438,30 @@
     }, 780)
   }
 
+  // ---------- Tique em blocos: um ✓ desenhado bloco a bloco, que se dissolve devagar (→ "já amanhã") ----------
+  // Calma de propósito: vem logo depois da explosão da estrela do Gemini.
+  const tique = document.createElement('div')
+  tique.className = 'tique'
+  // ordem do traço: desce pela perna curta e sobe pela longa
+  const TRACO = [[2, 0], [3, 1], [4, 2], [3, 3], [2, 4], [1, 5], [0, 6]]
+  tique.innerHTML = '<div class="tique__g">' + TRACO.map(([l, c], k) => `<i style="grid-row:${l + 1};grid-column:${c + 1};--k:${k}"></i>`).join('') + '</div>'
+  stage.appendChild(tique)
+  function desenharTique(trocar) {
+    if (varrendo) return
+    varrendo = true
+    tique.className = 'tique ativa'
+    void tique.offsetWidth
+    tique.classList.add('desenha')
+    setTimeout(() => {
+      trocar()
+      tique.classList.add('some')
+      setTimeout(() => {
+        tique.className = 'tique'
+        varrendo = false
+      }, 800)
+    }, 1250)
+  }
+
   // pelo NOME do slide (data-titulo), para sobreviver a qualquer troca de ordem
   const TRANSICOES = {
     'Minha história com IA': varrer,
@@ -1453,7 +1477,7 @@
     'IA é acelerador': acelerar,
     'Cada IA e quanto custa': cortinasBlocos,
     'Google AI Pro': explodirEstrela,
-    'Já amanhã': nascerSol,
+    'Já amanhã': desenharTique,
   }
 
   function avancar() {

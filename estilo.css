@@ -1802,3 +1802,14 @@ body.na-capa #chrome { display: none; }
 .cortinas3 b.ambar { background: var(--amber); }
 .cortinas3.desce i { transform: translateY(0); transition: transform 0.5s cubic-bezier(0.7, 0, 0.3, 1) calc(var(--p) * 90ms); }
 .cortinas3.sobe i { transform: translateY(-104%); transition: transform 0.55s cubic-bezier(0.6, 0, 0.4, 1) calc(var(--p) * 90ms); }
+
+/* ---------- Tique em blocos (→ "já amanhã"): calmo, sem explosão ---------- */
+.tique { position: absolute; inset: 0; z-index: 50; pointer-events: none; visibility: hidden; display: grid; place-items: center; }
+.tique.ativa { visibility: visible; }
+.tique::before { content: ''; position: absolute; inset: 0; background: var(--bg); opacity: 0; transition: opacity 0.35s ease; }
+.tique.desenha::before { opacity: 1; }
+.tique.some::before { opacity: 0; transition: opacity 0.7s ease 0.1s; }
+.tique__g { position: relative; display: grid; grid-template-columns: repeat(7, 96px); grid-template-rows: repeat(5, 96px); gap: 14px; }
+.tique__g i { border-radius: 18px; background: var(--amber); opacity: 0; transform: scale(0.4); }
+.tique.desenha .tique__g i { opacity: 1; transform: none; transition: transform 0.35s cubic-bezier(0.34, 1.4, 0.64, 1), opacity 0.2s ease; transition-delay: calc(0.25s + var(--k) * 95ms); }
+.tique.some .tique__g { opacity: 0; transform: scale(1.12); transition: opacity 0.6s ease, transform 0.8s ease-out; }

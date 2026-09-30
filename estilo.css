@@ -1813,3 +1813,26 @@ body.na-capa #chrome { display: none; }
 .tique__g i { border-radius: 18px; background: var(--amber); opacity: 0; transform: scale(0.4); }
 .tique.desenha .tique__g i { opacity: 1; transform: none; transition: transform 0.35s cubic-bezier(0.34, 1.4, 0.64, 1), opacity 0.2s ease; transition-delay: calc(0.25s + var(--k) * 95ms); }
 .tique.some .tique__g { opacity: 0; transform: scale(1.12); transition: opacity 0.6s ease, transform 0.8s ease-out; }
+
+/* ---------- Links de apoio em cada slide (canto superior direito) ---------- */
+.links { position: absolute; top: 40px; right: 140px; z-index: 6; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; max-width: 1100px; }
+.links a {
+  padding: 7px 14px; border-radius: 999px; text-decoration: none; white-space: nowrap;
+  font-family: var(--font-mono); font-size: 16px; letter-spacing: 0.02em; color: var(--text-2);
+  background: rgba(25, 28, 35, 0.85); border: 1px solid rgba(232, 168, 58, 0.35); transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+.links a:hover { color: #14151b; background: var(--amber); border-color: var(--amber); }
+.slide .aovivo { top: 96px; }
+
+/* ---------- Slide "Material de apoio" ---------- */
+.apoio__grade { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; margin-top: 50px; }
+.apoio__grupo { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 26px 26px 18px; }
+.apoio__grupo h3 { margin: 0 0 14px; font-size: 26px; color: var(--amber); }
+.apoio__grupo a { display: block; padding: 12px 0; border-top: 1px solid var(--line); text-decoration: none; }
+.apoio__grupo a b { display: block; font-size: 24px; color: var(--text); font-weight: 700; }
+.apoio__grupo a span { display: block; font-family: var(--font-mono); font-size: 15px; color: var(--text-3); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.apoio__grupo a:hover b { color: var(--amber); }
+.slide.ativo .apoio__grupo { animation: preco-sobe 0.5s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.slide.ativo .apoio__grupo:nth-child(2) { animation-delay: 0.1s; }
+.slide.ativo .apoio__grupo:nth-child(3) { animation-delay: 0.2s; }
+.slide.ativo .apoio__grupo:nth-child(4) { animation-delay: 0.3s; }
